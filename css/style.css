@@ -45,11 +45,10 @@ Edit the css for the nav_links class to use flex to match our example*/
 
 /* step 5
 Style the links so that they have the same color even after they have been visited. */
-a:link, a:visited, a:hover, a:active{
+.nav_item a:link, .nav_item a:visited, .nav_item a:hover, .nav_item a:active{
     color: blue;
     text-decoration: underline;
 }
-/* how about current page? */
 
 /* step 6
 Identify the proper selector to style ONLY those header elements that are direct children of a card class.  The required styling is the following: 
@@ -155,11 +154,17 @@ Modify the first header (the one not inside main) so that it remains visible at 
         display: flex;
         flex-direction: column;
     }
-    .nav_links {
+    /* .nav_links {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        width: 100%;
+    } */
+    .nav_item a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 240px;
     }
     .pricing {
         display: flex;
