@@ -17,7 +17,6 @@ The animation should take 5 seconds and only happen when the page is loaded. */
     animation-name: logo;
     animation-duration: 5s;
 }
-/* 會反彈？？ */
 
 /* step 2 
 Edit the body element to use the Poppins font (using Google fonts) with serif as a backup.  It should also use the image “concrete_seamless.png” as a background-image with a backup color of #f1f1f1.
@@ -71,6 +70,7 @@ Edit the css for the card class to match our example. Achieve this by using a fl
     display: flex;
     flex-direction: column;
     width: 450px;
+    border-radius: 50px 50px 0 0;
 }
 
 /* step 8
