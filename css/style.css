@@ -145,7 +145,6 @@ Modify the first header (the one not inside main) so that it remains visible at 
     }
 }
 
-/* @media (min-width: 1200px)  { */
 @media print {
     body {
         font-family: Arial, Helvetica;
@@ -173,6 +172,10 @@ Modify the first header (the one not inside main) so that it remains visible at 
     }
     .gallery, #gallery {
         display: none;
+    }
+    .card ul li:nth-child(2)::after {
+        content: "\1F44D"; /* Unicode for thumbs up character */
+        margin-left: 5px; /* Add some spacing between the text and the thumbs up emoji */
     }
 
 }
