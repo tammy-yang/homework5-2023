@@ -154,12 +154,12 @@ Modify the first header (the one not inside main) so that it remains visible at 
         display: flex;
         flex-direction: column;
     }
-    /* .nav_links {
+    .nav_links {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-    } */
+    }
     .nav_item a {
         display: flex;
         flex-direction: row;
