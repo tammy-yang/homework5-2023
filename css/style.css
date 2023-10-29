@@ -17,7 +17,6 @@ The animation should take 5 seconds and only happen when the page is loaded. */
     animation-name: logo;
     animation-duration: 5s;
 }
-/* 會反彈？？ */
 
 /* step 2 
 Edit the body element to use the Poppins font (using Google fonts) with serif as a backup.  It should also use the image “concrete_seamless.png” as a background-image with a backup color of #f1f1f1.
@@ -46,7 +45,7 @@ Edit the css for the nav_links class to use flex to match our example*/
 
 /* step 5
 Style the links so that they have the same color even after they have been visited. */
-a:link, a:visited{
+a:link, a:visited, a:hover, a:active{
     color: blue;
     text-decoration: underline;
 }
@@ -122,7 +121,7 @@ Modify the first header (the one not inside main) so that it remains visible at 
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
     .card {
         display: flex;
@@ -145,6 +144,8 @@ Modify the first header (the one not inside main) so that it remains visible at 
     }
 }
 
+/* for testing */
+/* @media (min-width: 1300px) { */
 @media print {
     body {
         font-family: Arial, Helvetica;
