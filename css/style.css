@@ -129,8 +129,13 @@ Modify the first header (the one not inside main) so that it remains visible at 
         height: auto;
     }
     main {
-        margin-top: auto;
+        padding-top: 100px;
     }
+    body > header {
+        position: fixed;
+        width: 100%;
+    }
+    
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -145,12 +150,17 @@ Modify the first header (the one not inside main) so that it remains visible at 
         background-image: none;
     }
     .nav_links {
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
     .pricing {
+        display: flex;
+        flex-direction: row;
         align-items: flex-end;
     }
     .card {
+        display: flex;
         border: 2px solid #45ADDD;
         flex-basis: 325px;
     }
